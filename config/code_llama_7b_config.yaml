@@ -1,0 +1,4 @@
+arcathon_pipeline:
+  name: LLama2Code
+  args:
+    model_id: codellama/CodeLlama-7b-hf

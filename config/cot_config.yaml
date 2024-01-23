@@ -1,0 +1,12 @@
+prompt_config:
+  prompt_start_location: prompting_classes/prompt_zero_shot_llama_coder_start.txt
+  prompt_test_location: prompting_classes/prompt_zero_shot_llama_code_test.txt
+  prompt_end_location: prompting_classes/prompt_zero_shot_llama_coder_end.txt
+  row_delimiter: []  # If nothing there this means space
+  matrix_delimiter: []
+  col_delimiter: '' # If nothing there this means space
+  using_numbers: True
+  cot_prompt_location: ./prompting_classes/cot_examples
+  cot_tasks:
+    - 05f2a901
+prompt_creator: CoTPromptConvertor

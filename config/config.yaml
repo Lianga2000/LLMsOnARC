@@ -1,0 +1,22 @@
+dataset_location: ./data/csv_files/direct_grid_few_shot_number_pipe_3.5.csv
+batch_size: 1
+prompt_creator: ZeroShotPromptConvertor
+using_numbers: True
+prompt_config:
+  prompt_start_location: prompting_classes/prompt_zero_shot.txt
+  delimiter:  # If nothing there this means space
+arcathon_pipeline:
+  model_id: OpenAssistant/codellama-13b-oasst-sft-v10 #meta-llama/Llama-2-13b-chat-hf
+  args:
+    device: auto
+    max_new_tokens: 4096
+    load_in_8bit: True
+    min_new_tokens: 1
+    temperature: 0.3
+    top_p: 0.9
+    tries_amount: 3
+    repetition_penalty: 1.05
+
+
+  device: cuda:2 #Notice that auto spreads the model over all GPUS, cuda:0  for example is for GPU where the device=0
+output_path: experiments_results

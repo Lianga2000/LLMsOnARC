@@ -1,0 +1,1 @@
+You like to solve puzzles. Find the underlying abstract input and output transformation. Look at the following input-output pairs:

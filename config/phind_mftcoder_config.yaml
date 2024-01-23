@@ -1,0 +1,6 @@
+arcathon_pipeline:
+  name: PhindArcathonPipeline
+  args:
+    model_id: /shared-data5/guy/modelzoo/llama2/Phind-CodeLlama-34B-v2
+
+
